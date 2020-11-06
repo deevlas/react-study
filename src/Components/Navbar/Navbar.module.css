@@ -1,0 +1,18 @@
+.nav {
+    grid-area: n;
+    background-color: cornflowerblue;
+
+}
+
+.item {
+    font-size: 21px;
+    padding-left: 20px;
+    color: white;
+}
+.item:first-child {
+    padding-top: 20px;
+}
+
+.item:last-child {
+    padding-top: 50px;
+}
