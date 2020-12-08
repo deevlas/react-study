@@ -1,5 +1,6 @@
 .item {
     color: dimgray;
+    padding: 20px;
 }
 .item img{
     width: 60px;

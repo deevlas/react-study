@@ -1,31 +1,24 @@
 import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
-const Profile  = () => {
+const Profile = (props) => {
+
+
     return (
         <div className={s.content}>
-            <div>
-                <img src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg" alt=""/>
-            </div>
-
-            <div className={s.ava}>
-                <div className={s.prof}>
-                    <img src="https://i.stack.imgur.com/kKcuz.png" alt=""/>
-                    <div>
-                        <div>
-                            Name
-                        </div>
-                        <div>
-                            info
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <MyPosts />
+            <ProfileInfo/>
+            <MyPosts posts={props.profilePage.posts}
+                     newPostText={props.profilePage.newPostText}
+                     updateNewPostText={props.updateNewPostText}
+                     addPost={props.addPost}
+                     // store={props.store}
+            />
         </div>
-    )
+
+)
 }
 
 export default Profile;

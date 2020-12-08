@@ -1,7 +1,8 @@
 .app-wrapper {
     display: grid;
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
+    height: 630px;
 
     grid-template-areas:
     "h h"
@@ -10,6 +11,11 @@
     grid-template-rows: 80px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
+}
+
+.app-wrapper-content {
+    grid-area: c;
+    background-color: aliceblue;
 }
 
 
