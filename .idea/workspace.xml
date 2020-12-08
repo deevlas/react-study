@@ -5,69 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d93ed25-0c27-4306-ace3-d50da427338e" name="Default Changelist" comment="start react-samuraiii">
-      <change afterPath="$PROJECT_DIR$/../MongoDB/.idea/MongoDB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactStudy/.idea/ReactStudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TypeScript/ts/.idea/ts.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Vue.js/.idea/Vue.js.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Vue.js/Vue-2/.idea/Vue-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Vue.js/Vue-3/.idea/Vue-3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Vue.js/Vue-4/.idea/Vue-4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mysql/.idea/mysql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Message/Message.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Friends/Friends.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Friends/Friends.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Music/Music.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Music/Music.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Navbar/FriendsNav/FriendsNav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/News/News.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/News/News.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Settings/Settings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Settings/Settings.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/.idea/uexample.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uexample/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/.idea/vuetask.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vuetask/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_11_2020,_20_31_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_11_2020__20_31__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="3d93ed25-0c27-4306-ace3-d50da427338e" name="Default Changelist" comment="continued react-samuraiii">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/Post.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
     </list>
     <list id="615538ee-3660-4c9c-9c64-ef18c6593783" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +187,7 @@
       <workItem from="1604415628943" duration="20214000" />
       <workItem from="1604684062755" duration="46073000" />
       <workItem from="1605048392210" duration="50856000" />
-      <workItem from="1607260807312" duration="15152000" />
+      <workItem from="1607260807312" duration="18232000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1604687046225</created>
@@ -283,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604745413409</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="continued react-samuraiii">
+      <created>1607434439142</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607434439142</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,19 +292,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="dialogs-and-store" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -389,7 +325,8 @@
     <MESSAGE value="start" />
     <MESSAGE value="start react-samurai" />
     <MESSAGE value="start react-samuraiii" />
-    <option name="LAST_COMMIT_MESSAGE" value="start react-samuraiii" />
+    <MESSAGE value="continued react-samuraiii" />
+    <option name="LAST_COMMIT_MESSAGE" value="continued react-samuraiii" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="23" width="1440" height="812" key="#Notifications" timestamp="1604686295848">
@@ -505,10 +442,10 @@
     </state>
     <state x="558" y="313" key="VCS.EditChangelistDialog/0.0.1440.900@0.0.1440.900" timestamp="1604689111868" />
     <state x="558" y="305" key="VCS.EditChangelistDialog/0.23.1440.812@0.23.1440.812" timestamp="1604686188372" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1604745416822">
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1607434446939">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1604745416822" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1607434446939" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1604700892082" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604689096771">
       <screen x="0" y="0" width="1440" height="900" />
@@ -542,6 +479,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="343" key="git4idea.ui.GitResetDialog/0.0.1440.900@0.0.1440.900" timestamp="1604688903554" />
+    <state x="541" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1607434573697">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state x="541" y="184" key="refactoring.ChangeSignatureDialog/0.23.1440.812@0.23.1440.812" timestamp="1607434573697" />
     <state x="425" y="214" width="590" height="426" key="zielu.gittoolbox.ui.GitPushTagsDialog" timestamp="1604687118700">
       <screen x="0" y="23" width="1440" height="812" />
     </state>

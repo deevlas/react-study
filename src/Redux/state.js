@@ -1,8 +1,18 @@
+const ADD_POST = "ADD-POST"
+const ADD_MESSAGE = "ADD-MESSAGE"
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT"
+const UPDATE_NEW_MESSAGE_TEXT = "UPDATE-NEW-MESSAGE-TEXT"
+
+export const addPostAC = () => ({type: ADD_POST})
+export const addMessageAC = () => ({type: ADD_MESSAGE})
+export const updateNewPostTextAC = (newText) => ({type: UPDATE_NEW_POST_TEXT, newText: newText})
+export const updateNewMessageTextAC = (newText) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: newText})
+
+
 let store = {
     _callSubscriber() {
         console.log('State changed')
     },
-
     _state: {
         profilePage: {
             posts:  [
@@ -43,7 +53,9 @@ let store = {
                 {id: 3, name: 'Sergei'}
             ]}
     },
-
+    subscribe(observer) {
+        this._callSubscriber = observer;
+    },
 
     getState() {
         return this._state
@@ -58,12 +70,12 @@ let store = {
 
         this._state.profilePage.posts.push(newPost);
         this._state.profilePage.newPostText = '';
-        this._callSubscriber(this._state)
+        this._callSubscriber(this)
     },
 
     updateNewPostText(newText) {
         this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state)
+        this._callSubscriber(this)
     },
 
     addMessage() {
@@ -73,17 +85,49 @@ let store = {
         }
         this._state.dialogsPage.messages.push(newMessage);
         this._state.dialogsPage.newMessageText = '';
-        this._callSubscriber(this._state)
+        this._callSubscriber(this)
     },
 
     updateNewMessageText(newText) {
         this._state.dialogsPage.newMessageText = newText;
-        this._callSubscriber(this._state)
+        this._callSubscriber(this)
     },
 
-    subscribe(observer) {
-        this._callSubscriber = observer;
+    dispatch(action){
+
+        // eslint-disable-next-line default-case
+        switch (action.type) {
+            case ADD_POST:
+                let newPost = {
+                    id: 5,
+                    message: this._state.profilePage.newPostText,
+                    likesCount: 0
+                }
+                this._state.profilePage.posts.push(newPost);
+                this._state.profilePage.newPostText = '';
+                this._callSubscriber(this)
+                break;
+            case UPDATE_NEW_POST_TEXT:
+                this._state.profilePage.newPostText = action.newText;
+                this._callSubscriber(this)
+                break;
+            case ADD_MESSAGE:
+                let newMessage = {
+                    id: 8,
+                    message: this._state.dialogsPage.newMessageText
+                }
+                this._state.dialogsPage.messages.push(newMessage);
+                this._state.dialogsPage.newMessageText = '';
+                this._callSubscriber(this)
+                break;
+            case UPDATE_NEW_MESSAGE_TEXT:
+                this._state.dialogsPage.newMessageText = action.newText;
+                this._callSubscriber(this)
+                break;
+        }
     }
 }
+
+
 
 export default store;
