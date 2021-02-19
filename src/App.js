@@ -1,44 +1,59 @@
 import './App.css';
-import React from "react";
-import Header from "./Components/Header/Header";
-import Navbar from "./Components/Navbar/Navbar";
-import Profile from "./Components/Profile/Profile";
-import Dialogs from "./Components/Dialogs/Dialogs";
-import {Route} from "react-router-dom";
+import React, {useEffect} from "react";
+import {withRouter, Route} from "react-router-dom";
 import Music from "./Components/Music/Music";
 import News from "./Components/News/News";
 import Settings from "./Components/Settings/Settings";
 import Friends from "./Components/Friends/Friends";
+import DialogsContainer from "./Components/Dialogs/DialogsContainer";
+import NavbarContainer from "./Components/Navbar/NavbarCotainer";
+import UsersContainer from "./Components/Users/UsersContainer";
+import ProfileContainer from "./Components/Profile/ProfileContainer";
+import HeaderContainer from "./Components/Header/HeaderContainer";
+import Login from "./Components/Login/Login";
+import {connect} from "react-redux";
+import {compose} from "redux";
+import Preloader from "./Components/Common/Preloader/Preloader";
+import {setInitialTC} from "./Redux/app-reducer";
 
 
 const App = (props) => {
 
+    useEffect(() => {
+        props.setInitialTC();
+    }, [props.initial])
 
+    if (!props.initial)
     return (
-            <div className='app-wrapper'>
-                <Header/>
-                <Navbar friends={props.store.getState().sideBarPage.friendsItem}/>
-                <div className='app-wrapper-content'>
-                    <Route path='/Dialogs'
-                           render={() => <Dialogs dialogsPage={props.store.getState().dialogsPage}
-                                                  addMessage={props.store.addMessage.bind(props.store)}
-                                                  updateNewMessageText={props.store.updateNewMessageText.bind(props.store)}
-                                                  // store = {props.store}
-                           /> }/>
-                    <Route path='/Profile'
-                           render={() => <Profile profilePage={props.store.getState().profilePage}
-                                                  addPost={props.store.addPost.bind(props.store)}
-                                                  updateNewPostText={props.store.updateNewPostText.bind(props.store)}
-                                                  // store = {props.store}
-                           />
-                           }/>
-                    <Route path='/News' render={() => <News /> }/>
-                    <Route path='/Music' render={() => <Music /> }/>
-                    <Route path='/Settings' render={() => <Settings /> }/>
-                    <Route path='/Friends' render={() => <Friends /> }/>
-                </div>
+        <Preloader/>
+    )
+    return (
+        <div className='app-wrapper'>
+            <HeaderContainer/>
+            <NavbarContainer/>
+            <div className='app-wrapper-content'>
+                <Route path='/dialogs'
+                       render={() => <DialogsContainer/>}/>
+                <Route path='/profile/:userId?'
+                       render={() => <ProfileContainer/>}/>
+                <Route path='/users'
+                       render={() => <UsersContainer/>}/>
+                <Route path='/news' render={() => <News/>}/>
+                <Route path='/music' render={() => <Music/>}/>
+                <Route path='/settings' render={() => <Settings/>}/>
+                <Route path='/friends' render={() => <Friends/>}/>
+                <Route path='/login' render={() => <Login/>}/>
             </div>
-    );
+        </div>
+    )
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        initial: state.app.initial
+    }
+}
+
+export default  compose(
+    withRouter,
+    connect(mapStateToProps, {setInitialTC}))(App);

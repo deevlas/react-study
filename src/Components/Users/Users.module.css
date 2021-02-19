@@ -1,0 +1,49 @@
+.avaImage img {
+    width: 100px;
+    height: 100px;
+}
+
+.usersBlock {
+    display: grid;
+    grid-template-rows: 180px;
+    grid-template-columns: 180px 10fr;
+}
+.userPost {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.avaBlock {
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.avaBlock button {
+    background: #51aeb7;
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.followedBtn {
+    margin: 0 auto;
+}
+.fontPage {
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid black;
+    color: #26a6d6;
+}
+.blockNumberPage {
+    display: inline;
+    padding: 7px;
+    cursor: pointer;
+}
+
+

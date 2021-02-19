@@ -5,16 +5,12 @@
 
 }
 
-.dialogsItems{
+form .sendBtn button{
+    background: #51aeb7;
+    color: black;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
 }
 
-.dialogsItems .active {
-    color: #47a0f6;
-}
-
-.messages {
-}
-
-.dialog {
-
-}
